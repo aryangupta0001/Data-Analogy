@@ -1,0 +1,26 @@
+.landing {
+    height: 60vh;
+    background-image: url('../assets/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+
+.w100 {
+    /* max-width: 100%; */
+    width: 100%;
+}
+
+#stripBehindNav{
+    background-color: white;
+    /* background-color: rgb(2, 4, 24); */
+    position: sticky;
+    top: 0;
+}
