@@ -1,0 +1,93 @@
+#services {
+    /* background-image: url('../assets/services.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: rgba(255, 255, 255, 0.639); */
+    background-blend-mode: lighten;
+    
+    /* color: black; */
+    
+}
+
+#servicesTable {
+    background-image: url('../assets/services.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.639);
+    background-blend-mode: lighten;
+}
+
+#service>h3 {
+    font-size: 1.3rem;
+}
+
+#service:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+
+    background-color: rgba(240, 248, 255, 0.464);
+    background-blend-mode: lighten;
+
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.w10 {
+    width: 5%;
+}
+
+.w25 {
+    width: 20%;
+}
+
+.w49 {
+    width: 55%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.t-justify {
+    text-align: justify;
+}
+
+.f-size-1 {
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.border {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.border-transparennt {
+    border: 0px solid transparent;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.m-0 {
+    /* margin: 0; */
+    margin: 2rem 0;
+}
+
+.pad-y-1 {
+    padding: 1rem 0rem;
+}

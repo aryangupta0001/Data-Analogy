@@ -1,0 +1,44 @@
+#aboutsection{
+    color: white;
+}
+
+.montserrat {
+    font-family: "Montserrat";
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.border-transparent {
+    border: 1px solid transparent;
+}
+
+.m-down {
+    margin-bottom: 2rem;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w95 {
+    width: 95%;
+}
+
+.m-auto {
+    margin: auto;
+}

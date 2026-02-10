@@ -1,0 +1,15 @@
+.mt0 {
+    margin-top: 0;
+}
+
+.about {
+    font-size: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#heroText{
+    /* color: white; */
+    color: rgb(0, 128, 255);
+}
