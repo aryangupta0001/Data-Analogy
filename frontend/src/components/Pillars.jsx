@@ -57,29 +57,29 @@ const Pillars = () => {
 
     return (
 
-        <div id="pillarsection">
+        <div id="pillarsection" className=''>
 
-            <div id='' className="w70 m-auto border-transparent">
+            <div id='' className="w90 m-auto border-transparent">
 
-                <h1 className='mt-2'>
+                <h1 className='mt-8 mb-5'>
                     Our 4 Pillars of Engineering
                 </h1>
 
 
-                <div className="flex">
+                <div className="flex-wrap space-evenly">
                     {pillars.map((pillar, index) => (
-                        <div key={index} id='card' className="w20 h45vh border rounded-40" style={{ backgroundImage: `url(${pillar.image})` }}>
-                            <div id='pillarImage' className='h55'>
+                        <div key={index} id='card' className="w22 h45vh border rounded-40" style={{ backgroundImage: `url(${pillar.image})` }}>
+                            <div id='pillarImage' className='h60'>
 
                                 <div className="">
                                     {pillar.icon}
                                 </div>
 
-                                <h2>
+                                <h2 className=''>
                                     {pillar.title}
                                 </h2>
                             </div>
-                            <p className="pad1 m-0" style={{ backgroundColor: 'white' }}>
+                            <p className="pad1 m-0 bottom-0" style={{ backgroundColor: 'white' }}>
                                 {pillar.desc}
                             </p>
                         </div>

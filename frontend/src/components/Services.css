@@ -57,6 +57,11 @@
     margin: auto;
 }
 
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
 .t-justify {
     text-align: justify;
 }

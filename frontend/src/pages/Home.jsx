@@ -12,6 +12,7 @@ import About from "../components/About";
 import './Home.css'
 import { useEffect } from "react";
 import Pillars from "../components/Pillars";
+import Blog from "../components/Blog";
 
 export default function Home() {
 
@@ -38,8 +39,9 @@ export default function Home() {
                 <About />
                 <Services />
                 <Pillars />
-                {/* <WhyUs /> */}
                 <Industries />
+                <Blog />
+                {/* <WhyUs /> */}
                 {/* <CTA />
                 <Footer /> */}
             </div>

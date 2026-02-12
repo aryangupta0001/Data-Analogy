@@ -1,5 +1,9 @@
-.mt-2 {
-    margin: 5rem;
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.mb-5{
+    margin-bottom: 5rem;
 }
 
 .m-auto {
@@ -7,11 +11,11 @@
 }
 
 
-.w20 {
+.w22 {
     width: 22%;
 }
 
-.w70 {
+.w90 {
     width: 90%;
 }
 
@@ -19,20 +23,37 @@
     height: 45vh;
 }
 
-.h55 {
+.h60 {
     height: 60%;
 }
 
 #card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* optional */
+
+
     overflow: hidden;
     background-position: top;
     background-size: 135%;
     background-repeat: no-repeat;
     transition: background-size 0.6s ease-in-out;
+
+    min-width: 200px;
 }
 
 #card:hover {
     background-size: 145%;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
 
 
@@ -47,6 +68,9 @@
     border-top: 1px solid black;
     border-radius: 15px;
     font-size: 1rem;
+    margin-top: auto;
+    /* This pushes it to the bottom */
+
 }
 
 
