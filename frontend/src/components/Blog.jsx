@@ -1,23 +1,43 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+const images = import.meta.glob('../assets/blogs/*', {
+    eager: true,
+    as: 'url'
+});
+
 
 import './Blog.css';
+import { blogs } from './blogs';
 
 const Blog = () => {
     return (
         <>
-            <div className='w100 h100vh border-transparent'>
-                <h1 className='mt-8 mb-5'>
+            <div className='w100 minmaxhght border-transparent'>
+                <h1 className=''>
                     Blogs
                 </h1>
 
-                <div className='w90 h50vh flex border m-auto'>
-                    <div className='w70 h100 border'>
+                <div className='w90 h80 blog-container m-auto'>
+                    {
+                        blogs.map((blog, index) => {
+                            const imagePath = `../assets/blogs/${blog.id}.png`;
+                            console.log(imagePath);
 
-                    </div>
+                            const imageUrl = images[imagePath];
 
-                    <div className='w40 h100 border'>
-
-                    </div>
+                            return (
+                                <div id='blog' key={index} className='blog card-background card-text' style={{ backgroundImage: `url(${imageUrl})` }}>
+                                    <h2>
+                                        {blog.title}
+                                    </h2>
+                                    <p>
+                                        {blog.excerpt}
+                                    </p>
+                                </div>
+                            )
+                        }
+                        )
+                    }
                 </div>
             </div>
         </>

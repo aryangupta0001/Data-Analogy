@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { Target, Zap, ShieldCheck, Layers } from 'lucide-react';
 import './Pillars.css';
 
-import precisionImg from "../assets/precision.png";
-import velocityImg from "../assets/velocity.png";
-import securityImg from "../assets/security.png";
-import scalabilityImg from "../assets/scalability.png";
+import precisionImg from "../assets/pillars/precision.png";
+import velocityImg from "../assets/pillars/velocity.png";
+import securityImg from "../assets/pillars/security.png";
+import scalabilityImg from "../assets/pillars/scalability.png";
 
 
 const pillars = [
@@ -41,23 +41,9 @@ const pillars = [
 
 const Pillars = () => {
 
-    useEffect(() => {
-        var height = window.innerHeight;
-        var usedHeight = document.getElementById('stripBehindNav').offsetHeight;
-
-        var pillarSectionHeight = height - usedHeight;
-
-        var pillarsection = document.getElementById('pillarsection');
-        pillarsection.style.height = pillarSectionHeight + 'px';
-
-        
-
-    }, [])
-
-
     return (
 
-        <div id="pillarsection" className=''>
+        <div id="pillarsection" className='minmaxhght'>
 
             <div id='' className="w90 m-auto border-transparent">
 
@@ -66,9 +52,9 @@ const Pillars = () => {
                 </h1>
 
 
-                <div className="flex-wrap space-evenly">
+                <div className="grid">
                     {pillars.map((pillar, index) => (
-                        <div key={index} id='card' className="w22 h45vh border rounded-40" style={{ backgroundImage: `url(${pillar.image})` }}>
+                        <div key={index} id='card' className=" h45vh border rounded-40" style={{ backgroundImage: `url(${pillar.image})` }}>
                             <div id='pillarImage' className='h60'>
 
                                 <div className="">

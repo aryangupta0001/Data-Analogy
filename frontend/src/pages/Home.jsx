@@ -42,8 +42,12 @@ export default function Home() {
                 <Industries />
                 <Blog />
                 {/* <WhyUs /> */}
-                {/* <CTA />
-                <Footer /> */}
+                {/* <CTA /> */}
+                <Footer />
+            </div>
+
+            <div style={{height : '100vh', width : '1rem', backgroundColor : 'black', position : 'absolute', zIndex : '500'}}>
+
             </div>
         </>
     );

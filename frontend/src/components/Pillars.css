@@ -2,7 +2,7 @@
     margin-top: 8rem;
 }
 
-.mb-5{
+.mb-5 {
     margin-bottom: 5rem;
 }
 
@@ -26,6 +26,12 @@
 .h60 {
     height: 60%;
 }
+
+.minmaxhght {
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
 
 #card {
     display: flex;
@@ -112,4 +118,11 @@
 
 .m-0 {
     margin: 0 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
